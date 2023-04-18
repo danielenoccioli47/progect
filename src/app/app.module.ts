@@ -7,6 +7,7 @@ import { TabellaComponent } from './tabella/tabella.component';
 import {MatTableModule} from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     MatTableModule,
-    HttpClientModule ,
+    HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [

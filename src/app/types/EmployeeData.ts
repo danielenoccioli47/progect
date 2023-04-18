@@ -1,5 +1,7 @@
 export interface ServerData {
     _embedded: Employees;
+    _links: Links;
+    page: Page;
 }
 
 export interface Employees {
@@ -19,6 +21,7 @@ export interface Employee {
 export interface Links{
     first: Link;
     self: Link;
+    prev: Link;
     next: Link;
     last: Link;
     profile: Link;
@@ -27,7 +30,7 @@ export interface Links{
 export interface Link {
     href: string;
 }
-export interface page{
+export interface Page{
     size: number;
     totalElement: number;
     totalPages: number;
